@@ -7,80 +7,73 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 152 30% 10%;
+    --foreground: 0 0% 5%;
 
     --card: 0 0% 100%;
-    --card-foreground: 152 30% 10%;
+    --card-foreground: 0 0% 5%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 152 30% 10%;
+    --popover-foreground: 0 0% 5%;
 
-    --primary: 152 55% 28%;
+    --primary: 0 0% 9%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 28 85% 55%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 9%;
 
-    --muted: 150 15% 95%;
-    --muted-foreground: 152 10% 45%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 150 20% 93%;
-    --accent-foreground: 152 30% 10%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 9%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 150 12% 88%;
-    --input: 150 12% 88%;
-    --ring: 152 55% 28%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 9%;
 
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-foreground: 0 0% 26%;
+    --sidebar-primary: 0 0% 10%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 0 0% 96%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 0 0% 91%;
+    --sidebar-ring: 0 0% 9%;
 
     /* Custom tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(152 55% 28%), hsl(152 45% 20%));
-    --hero-text-gradient: linear-gradient(135deg, hsl(152 55% 28%), hsl(28 85% 55%));
-    --surface-warm: 30 30% 97%;
-    --badge-bg: 152 50% 94%;
-    --badge-text: 152 55% 28%;
+    --gradient-accent: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+    --gradient-accent-subtle: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(0 0% 5%), hsl(0 0% 12%));
+    --surface-warm: 0 0% 98%;
+    --badge-bg: 0 0% 95%;
+    --badge-text: 0 0% 20%;
   }
 
   .dark {
-    --background: 152 30% 5%;
-    --foreground: 150 15% 95%;
-
-    --card: 152 25% 8%;
-    --card-foreground: 150 15% 95%;
-
-    --popover: 152 25% 8%;
-    --popover-foreground: 150 15% 95%;
-
-    --primary: 152 55% 40%;
-    --primary-foreground: 0 0% 100%;
-
-    --secondary: 28 85% 55%;
-    --secondary-foreground: 0 0% 100%;
-
-    --muted: 152 20% 15%;
-    --muted-foreground: 150 10% 60%;
-
-    --accent: 152 20% 15%;
-    --accent-foreground: 150 15% 95%;
-
+    --background: 0 0% 3%;
+    --foreground: 0 0% 96%;
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 96%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 96%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 5%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 96%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 55%;
+    --accent: 0 0% 12%;
+    --accent-foreground: 0 0% 96%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 152 15% 18%;
-    --input: 152 15% 18%;
-    --ring: 152 55% 40%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 85%;
   }
 }
 
@@ -100,17 +93,25 @@
 
 @layer utilities {
   .text-gradient {
-    background: var(--hero-text-gradient);
+    background: var(--gradient-accent);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
-  .bg-hero-gradient {
-    background: var(--hero-gradient);
+  .bg-gradient-accent {
+    background: var(--gradient-accent);
+  }
+
+  .bg-gradient-dark {
+    background: var(--gradient-dark);
   }
 
   .bg-surface-warm {
     background-color: hsl(var(--surface-warm));
+  }
+
+  .border-gradient {
+    border-image: var(--gradient-accent) 1;
   }
 }

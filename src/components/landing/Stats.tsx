@@ -7,7 +7,7 @@ const stats = [
 
 const Stats = () => {
   return (
-    <section id="stats" className="py-20 bg-hero-gradient">
+    <section id="stats" className="py-20 bg-primary">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat) => (
@@ -15,7 +15,7 @@ const Stats = () => {
               <p className="text-3xl md:text-4xl font-heading font-extrabold text-primary-foreground mb-2">
                 {stat.value}
               </p>
-              <p className="text-primary-foreground/70 text-sm">{stat.label}</p>
+              <p className="text-primary-foreground/60 text-sm">{stat.label}</p>
             </div>
           ))}
         </div>
