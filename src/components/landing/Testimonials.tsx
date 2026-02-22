@@ -1,6 +1,9 @@
 import chefImg from "@/assets/testimonial-chef.jpg";
 import comptableImg from "@/assets/testimonial-comptable.jpg";
 import serveurImg from "@/assets/testimonial-serveur.jpg";
+import geranteImg from "@/assets/testimonial-gerante.jpg";
+import directeurImg from "@/assets/testimonial-directeur.jpg";
+import patissiereImg from "@/assets/testimonial-patissiere.jpg";
 import { Star } from "lucide-react";
 
 const testimonials = [
@@ -32,7 +35,7 @@ const testimonials = [
     name: "Marie Rousseau",
     role: "Gérante",
     restaurant: "Café des Halles",
-    image: chefImg,
+    image: geranteImg,
     quote:
       "On a enfin une vision claire de notre rentabilité par plat. J'ai supprimé 4 plats qui nous coûtaient de l'argent sans le savoir. Résultat : +15% de marge brute.",
   },
@@ -40,7 +43,7 @@ const testimonials = [
     name: "Antoine Girard",
     role: "Directeur des opérations",
     restaurant: "Les 3 Fourchettes",
-    image: comptableImg,
+    image: directeurImg,
     quote:
       "Gérer 3 restaurants avec un seul tableau de bord, c'était notre rêve. Aujourd'hui c'est notre quotidien. Le temps gagné est colossal.",
   },
@@ -48,7 +51,7 @@ const testimonials = [
     name: "Camille Perrin",
     role: "Cheffe pâtissière",
     restaurant: "Maison Dorée",
-    image: serveurImg,
+    image: patissiereImg,
     quote:
       "Le suivi des matières premières en pâtisserie demande une précision extrême. Cet outil me donne exactement ça, sans prise de tête.",
   },
