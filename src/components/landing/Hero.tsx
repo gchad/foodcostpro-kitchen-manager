@@ -35,11 +35,10 @@ const Hero = () => {
               Démarrer gratuitement
               <ArrowRight className="w-4 h-4" />
             </Button>
-            <span className="text-sm text-white/70 font-medium">La solution #1 pour les restaurateurs</span>
           </div>
 
-          <p className="text-sm text-white/60">
-            ✓ 14 jours gratuits · ✓ Sans carte bancaire · ✓ Support inclus
+          <p className="text-sm text-white/70 font-medium">
+            La solution #1 pour les restaurateurs
           </p>
         </div>
 
