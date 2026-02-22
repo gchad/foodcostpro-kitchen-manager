@@ -28,6 +28,30 @@ const testimonials = [
     quote:
       "Les inventaires qui prenaient 3 heures se font maintenant en 45 minutes. L'équipe est plus motivée et on détecte les problèmes tout de suite.",
   },
+  {
+    name: "Marie Rousseau",
+    role: "Gérante",
+    restaurant: "Café des Halles",
+    image: chefImg,
+    quote:
+      "On a enfin une vision claire de notre rentabilité par plat. J'ai supprimé 4 plats qui nous coûtaient de l'argent sans le savoir. Résultat : +15% de marge brute.",
+  },
+  {
+    name: "Antoine Girard",
+    role: "Directeur des opérations",
+    restaurant: "Les 3 Fourchettes",
+    image: comptableImg,
+    quote:
+      "Gérer 3 restaurants avec un seul tableau de bord, c'était notre rêve. Aujourd'hui c'est notre quotidien. Le temps gagné est colossal.",
+  },
+  {
+    name: "Camille Perrin",
+    role: "Cheffe pâtissière",
+    restaurant: "Maison Dorée",
+    image: serveurImg,
+    quote:
+      "Le suivi des matières premières en pâtisserie demande une précision extrême. Cet outil me donne exactement ça, sans prise de tête.",
+  },
 ];
 
 const Testimonials = () => {
