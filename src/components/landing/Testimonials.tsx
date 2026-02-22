@@ -43,29 +43,36 @@ const Testimonials = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="bg-card rounded-2xl border border-border p-8 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center"
+              className="bg-card rounded-3xl border border-border overflow-hidden shadow-sm hover:shadow-xl transition-shadow flex flex-col"
             >
-              <img
-                src={t.image}
-                alt={t.name}
-                className="w-28 h-28 rounded-full object-cover mb-5 ring-4 ring-border shadow-lg"
-              />
-              <p className="font-heading font-bold text-lg">{t.name}</p>
-              <p className="text-sm text-muted-foreground mb-4">
-                {t.role} · {t.restaurant}
-              </p>
-              <div className="flex gap-1 mb-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-amber-500 text-amber-500" />
-                ))}
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src={t.image}
+                  alt={t.name}
+                  className="w-full h-full object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
+                <div className="absolute bottom-4 left-6 right-6">
+                  <p className="font-heading font-bold text-xl">{t.name}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {t.role} · {t.restaurant}
+                  </p>
+                </div>
               </div>
-              <blockquote className="text-foreground/80 leading-relaxed flex-1">
-                "{t.quote}"
-              </blockquote>
+              <div className="p-6 flex flex-col flex-1">
+                <div className="flex gap-1 mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-amber-500 text-amber-500" />
+                  ))}
+                </div>
+                <blockquote className="text-foreground/80 leading-relaxed flex-1">
+                  "{t.quote}"
+                </blockquote>
+              </div>
             </div>
           ))}
         </div>
