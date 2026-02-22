@@ -1,6 +1,7 @@
 import Navbar from "@/components/landing/Navbar";
 import Hero from "@/components/landing/Hero";
 import ClientLogos from "@/components/landing/ClientLogos";
+import ProductShowcase from "@/components/landing/ProductShowcase";
 import Features from "@/components/landing/Features";
 import Testimonials from "@/components/landing/Testimonials";
 import Stats from "@/components/landing/Stats";
@@ -13,6 +14,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <ClientLogos />
+      <ProductShowcase />
       <Features />
       <Testimonials />
       <Stats />
