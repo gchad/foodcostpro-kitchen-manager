@@ -11,7 +11,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section id="features" className="py-20 md:py-28 bg-background">
+    <section id="features" className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-sm font-semibold text-gradient uppercase tracking-wider mb-3">Fonctionnalités</p>
