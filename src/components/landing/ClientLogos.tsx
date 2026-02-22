@@ -6,8 +6,10 @@ import logoAtelier from "@/assets/logo-atelier.png";
 import logoComptoir from "@/assets/logo-comptoir.png";
 import logoDuval from "@/assets/logo-duval.png";
 import logoHalles from "@/assets/logo-halles.png";
+import logoMG from "@/assets/logo-mauvais-garcons.svg";
 
 const clients = [
+  { name: "Les Mauvais Garçons", logo: logoMG, invert: true },
   { name: "Le Bistrot Parisien", logo: logoBistrot },
   { name: "Chez Marcel", logo: logoMarcel },
   { name: "La Belle Époque", logo: logoBelleEpoque },
@@ -31,7 +33,7 @@ const ClientLogos = () => {
               key={client.name}
               src={client.logo}
               alt={client.name}
-              className="h-12 md:h-14 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+              className={`h-12 md:h-14 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0 ${(client as any).invert ? "invert dark:invert-0" : ""}`}
             />
           ))}
         </div>
