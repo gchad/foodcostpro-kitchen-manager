@@ -1,7 +1,8 @@
-import { TrendingDown, BarChart3, Package, Euro } from "lucide-react";
+import { TrendingDown, BarChart3, Package, Euro, ChefHat } from "lucide-react";
 import screenDashboard from "@/assets/screen-dashboard.jpg";
 import screenInventory from "@/assets/screen-inventory.jpg";
 import screenMargins from "@/assets/screen-margins.jpg";
+import screenRecipes from "@/assets/screen-recipes.jpg";
 
 const showcases = [
   {
@@ -38,6 +39,18 @@ const showcases = [
     stats: [
       { value: "+15%", label: "de marge brute en moyenne" },
       { value: "2x", label: "moins de pertes cachées" },
+    ],
+  },
+  {
+    label: "Recettes & Ingrédients",
+    title: "Générez vos fiches recettes en un clic",
+    description:
+      "Créez des fiches techniques détaillées avec coûts, grammages et étapes. Vos chefs suivent chaque recette sur leur téléphone, directement en cuisine, pour un résultat parfait à chaque service.",
+    image: screenRecipes,
+    icon: ChefHat,
+    stats: [
+      { value: "0 gaspillage", label: "grâce aux dosages précis" },
+      { value: "100+", label: "recettes générées en 1 mois" },
     ],
   },
 ];
