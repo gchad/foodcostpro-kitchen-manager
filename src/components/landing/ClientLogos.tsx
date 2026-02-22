@@ -1,12 +1,21 @@
+import logoBistrot from "@/assets/logo-bistrot.png";
+import logoMarcel from "@/assets/logo-marcel.png";
+import logoBelleEpoque from "@/assets/logo-belle-epoque.png";
+import logoBrasserie from "@/assets/logo-brasserie.png";
+import logoAtelier from "@/assets/logo-atelier.png";
+import logoComptoir from "@/assets/logo-comptoir.png";
+import logoDuval from "@/assets/logo-duval.png";
+import logoHalles from "@/assets/logo-halles.png";
+
 const clients = [
-  "Le Bistrot Parisien",
-  "Chez Marcel",
-  "La Belle Époque",
-  "Brasserie du Port",
-  "L'Atelier Gourmand",
-  "Le Petit Comptoir",
-  "Maison Duval",
-  "Les Halles",
+  { name: "Le Bistrot Parisien", logo: logoBistrot },
+  { name: "Chez Marcel", logo: logoMarcel },
+  { name: "La Belle Époque", logo: logoBelleEpoque },
+  { name: "Brasserie du Port", logo: logoBrasserie },
+  { name: "L'Atelier Gourmand", logo: logoAtelier },
+  { name: "Le Petit Comptoir", logo: logoComptoir },
+  { name: "Maison Duval", logo: logoDuval },
+  { name: "Les Halles", logo: logoHalles },
 ];
 
 const ClientLogos = () => {
@@ -16,14 +25,14 @@ const ClientLogos = () => {
         <p className="text-center text-sm text-muted-foreground mb-6 font-medium uppercase tracking-widest">
           Ils nous font confiance
         </p>
-        <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-4">
-          {clients.map((name) => (
-            <span
-              key={name}
-              className="text-lg font-heading font-bold text-muted-foreground/50 hover:text-muted-foreground transition-colors whitespace-nowrap"
-            >
-              {name}
-            </span>
+        <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-6">
+          {clients.map((client) => (
+            <img
+              key={client.name}
+              src={client.logo}
+              alt={client.name}
+              className="h-12 md:h-14 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
+            />
           ))}
         </div>
       </div>
