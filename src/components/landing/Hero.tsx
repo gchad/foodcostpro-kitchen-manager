@@ -31,7 +31,7 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-wrap justify-center items-center gap-4 pt-2">
-            <Button size="lg" className="gap-2 text-base px-8">
+            <Button size="lg" className="gap-2 text-base px-8 bg-gradient-accent hover:opacity-90 text-white border-0">
               Démarrer gratuitement
               <ArrowRight className="w-4 h-4" />
             </Button>

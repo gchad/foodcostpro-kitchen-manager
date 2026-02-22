@@ -33,7 +33,7 @@ const ClientLogos = () => {
               key={client.name}
               src={client.logo}
               alt={client.name}
-              className={`h-12 md:h-14 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0 ${(client as any).invert ? "invert dark:invert-0" : ""}`}
+              className={`h-16 md:h-20 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity grayscale hover:grayscale-0 ${(client as any).invert ? "invert dark:invert-0" : ""}`}
             />
           ))}
         </div>
