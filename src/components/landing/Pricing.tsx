@@ -27,7 +27,7 @@ const plans = [
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="py-20 md:py-28 bg-surface-warm">
+    <section id="pricing" className="py-12 md:py-16 bg-surface-warm">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="text-sm font-semibold text-gradient uppercase tracking-wider mb-3">Tarifs</p>
