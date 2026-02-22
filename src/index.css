@@ -46,8 +46,8 @@
     --sidebar-ring: 0 0% 9%;
 
     /* Custom tokens */
-    --gradient-accent: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
-    --gradient-accent-subtle: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+    --gradient-accent: linear-gradient(135deg, #b8860b, #d4a017, #e8a910, #c47f0a);
+    --gradient-accent-subtle: linear-gradient(135deg, #b8860b 0%, #d4a017 50%, #e8a910 100%);
     --gradient-dark: linear-gradient(135deg, hsl(0 0% 5%), hsl(0 0% 12%));
     --surface-warm: 0 0% 98%;
     --badge-bg: 0 0% 95%;
