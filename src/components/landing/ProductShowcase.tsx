@@ -1,6 +1,7 @@
-import { TrendingDown, BarChart3, Package } from "lucide-react";
+import { TrendingDown, BarChart3, Package, Euro } from "lucide-react";
 import screenDashboard from "@/assets/screen-dashboard.jpg";
 import screenInventory from "@/assets/screen-inventory.jpg";
+import screenMargins from "@/assets/screen-margins.jpg";
 
 const showcases = [
   {
@@ -25,6 +26,18 @@ const showcases = [
     stats: [
       { value: "45 min", label: "par inventaire au lieu de 3h" },
       { value: "100%", label: "traçabilité" },
+    ],
+  },
+  {
+    label: "Marges & Rentabilité",
+    title: "Renouez avec la rentabilité",
+    description:
+      "Identifiez vos plats les plus rentables, éliminez ceux qui vous coûtent de l'argent et optimisez vos prix. Reprenez le contrôle de vos marges pour sourire à chaque encaissement.",
+    image: screenMargins,
+    icon: Euro,
+    stats: [
+      { value: "+15%", label: "de marge brute en moyenne" },
+      { value: "2x", label: "moins de pertes cachées" },
     ],
   },
 ];
