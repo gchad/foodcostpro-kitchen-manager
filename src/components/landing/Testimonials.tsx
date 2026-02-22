@@ -47,29 +47,25 @@ const Testimonials = () => {
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="bg-card rounded-2xl border border-border p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col"
+              className="bg-card rounded-2xl border border-border p-8 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center"
             >
+              <img
+                src={t.image}
+                alt={t.name}
+                className="w-28 h-28 rounded-full object-cover mb-5 ring-4 ring-border shadow-lg"
+              />
+              <p className="font-heading font-bold text-lg">{t.name}</p>
+              <p className="text-sm text-muted-foreground mb-4">
+                {t.role} · {t.restaurant}
+              </p>
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-amber-500 text-amber-500" />
                 ))}
               </div>
-              <blockquote className="text-foreground/90 leading-relaxed mb-6 flex-1">
+              <blockquote className="text-foreground/80 leading-relaxed flex-1">
                 "{t.quote}"
               </blockquote>
-              <div className="flex items-center gap-3 pt-4 border-t border-border">
-                <img
-                  src={t.image}
-                  alt={t.name}
-                  className="w-11 h-11 rounded-full object-cover"
-                />
-                <div>
-                  <p className="font-semibold text-sm">{t.name}</p>
-                  <p className="text-xs text-muted-foreground">
-                    {t.role} · {t.restaurant}
-                  </p>
-                </div>
-              </div>
             </div>
           ))}
         </div>
