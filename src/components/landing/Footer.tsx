@@ -4,7 +4,10 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <span className="text-lg font-heading font-bold text-primary-foreground">FoodCostPro</span>
+            <div className="flex items-center gap-2">
+              <img src="/logo-icon.png" alt="FoodCostPro" className="w-6 h-6 brightness-0 invert" />
+              <span className="text-lg font-heading font-bold text-primary-foreground">FoodCostPro</span>
+            </div>
             <p className="text-sm text-primary-foreground/50 leading-relaxed">
               La plateforme de gestion des coûts matières pour les professionnels de la restauration.
             </p>
