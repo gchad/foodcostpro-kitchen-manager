@@ -1,3 +1,5 @@
+import ContactFormDialog from "./ContactFormDialog";
+
 const Footer = () => {
   return (
     <footer className="bg-primary py-12">
@@ -36,6 +38,13 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-primary-foreground/50">
               <li>contact@foodcostpro.fr</li>
               <li>01 23 45 67 89</li>
+              <li>
+                <ContactFormDialog>
+                  <button className="hover:text-primary-foreground transition-colors underline underline-offset-2">
+                    Nous contacter
+                  </button>
+                </ContactFormDialog>
+              </li>
             </ul>
           </div>
         </div>
