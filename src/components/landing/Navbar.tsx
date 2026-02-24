@@ -18,7 +18,7 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center gap-3">
           <Button variant="ghost" size="sm">Se connecter</Button>
-          <Button size="sm">Essai gratuit</Button>
+          <Button size="sm" className="bg-gradient-accent hover:opacity-90 text-white border-0">Essai gratuit</Button>
         </div>
 
         <button className="md:hidden" onClick={() => setMobileOpen(!mobileOpen)}>
