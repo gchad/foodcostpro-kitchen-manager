@@ -48,7 +48,7 @@ const Pricing = () => {
                   ? "bg-card shadow-xl scale-105"
                   : "bg-card border border-border hover:shadow-lg"
               }`}
-              style={plan.popular ? { border: '2px solid transparent', backgroundClip: 'padding-box', boxShadow: '0 0 0 2px rgba(99,102,241,0.3), 0 25px 50px -12px rgba(0,0,0,0.15)' } : {}}
+              style={plan.popular ? { border: '2px solid transparent', backgroundClip: 'padding-box', boxShadow: '0 0 0 2px rgba(16,185,129,0.3), 0 25px 50px -12px rgba(0,0,0,0.15)' } : {}}
             >
               {plan.popular && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-accent text-primary-foreground text-xs font-semibold">

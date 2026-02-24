@@ -93,7 +93,7 @@ const Testimonials = () => {
               <div className="p-6 flex flex-col flex-1">
                 <div className="flex gap-1 mb-3">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-amber-500 text-amber-500" />
+                    <Star key={i} className="w-4 h-4 fill-emerald-500 text-emerald-500" />
                   ))}
                 </div>
                 <blockquote className="text-foreground/80 leading-relaxed flex-1">
